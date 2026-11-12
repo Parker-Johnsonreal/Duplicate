@@ -24,5 +24,6 @@ describe('Sauce Demo login', () => {
 
         await ProductsPage.addToCart('Sauce Labs Onesie')
         await expect(ProductsPage.cartBadge).toHaveText('1')
+        await browser.saveScreenshot('./screenshots/fileName.png')
     })
 })
